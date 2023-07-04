@@ -1,2 +1,0 @@
-# 0x09-python-everything_is_object
-## Python - Everything is an object
