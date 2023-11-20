@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import MySQLdb
 import sys
 
@@ -26,7 +27,6 @@ def list_states(username, password, database_name):
     states = cursor.fetchall()
 
     # Display the results
-    print("States:")
     for state in states:
         print(state)
 
@@ -37,7 +37,7 @@ def list_states(username, password, database_name):
 if __name__ == "__main__":
     # Check if the script is executed with the correct number of arguments
     if len(sys.argv) != 4:
-        print("Usage: python script.py <username> <password> <database_name>")
+        print("Usage: ./0-select_states.py <username> <password> <database_name>")
         sys.exit(1)
 
     # Get MySQL credentials from command line arguments
